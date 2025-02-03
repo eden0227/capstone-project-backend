@@ -239,11 +239,11 @@ app.delete("/booking/delete", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname + "/public/index.html"));
+    res.sendFile(path.join(__dirname + "../public/index.html"));
 });
 
 app.use((req, res) => {
-    res.sendFile(path.join(__dirname + "/public/error.html"));
+    res.sendFile(path.join(__dirname + "../public/error.html"));
 });
 
 // http://localhost:3000
